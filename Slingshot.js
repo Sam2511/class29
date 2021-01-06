@@ -14,6 +14,15 @@ class SlingShot{
         World.add(world, this.sling);
     }
 
+    attach(body){
+      this.sling.bodyA = body;
+      
+    }
+
+
+
+
+
     fly(){
         this.sling.bodyA = null;
     }
@@ -40,6 +49,8 @@ class SlingShot{
                 image(this.sling3,pointA.x + 25, pointA.y -10,15,30);
             }
            
+
+
             
             pop();
         }
